@@ -1,7 +1,6 @@
 ---
 title: "《跨越不可能》读书笔记"
 date: 2024-04-27T06:43:07+08:00
-draft: true
 description: "读书笔记"
 ---
 
