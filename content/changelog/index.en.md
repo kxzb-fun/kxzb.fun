@@ -1,8 +1,8 @@
 ---
-title: "博客修改日志"
+title: "Changelog"
 date: 2024-05-15
 draft: false
-description: "我的博客修改日志."
+description: "My blog change log."
 slug: "changelog"
 tags: ["changelog", "sample"]
 showDate: false
@@ -11,7 +11,5 @@ showReadingTime: false
 showEdit: false
 ---
 {{< lead >}}
-博客修改日志
+Things change around here
 {{< /lead >}}
-
-- 2024-05-15 添加日记模块
