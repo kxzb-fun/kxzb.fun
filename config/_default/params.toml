@@ -46,10 +46,10 @@ fingerprintAlgorithm = "sha256"
   showHeadingAnchors = true
   showPagination = true
   invertPagination = false
-  showReadingTime = true
+  showReadingTime = false #展示阅读时间
   showTableOfContents = true
   showTaxonomies = true #是否显示与本文相关的分类法
-  showWordCount = false
+  showWordCount = false # 显示文章字数
   showComments = false
   # sharingLinks = ["facebook", "x-twitter", "mastodon", "pinterest", "reddit", "linkedin", "email", "telegram", "line", "weibo"]
 
