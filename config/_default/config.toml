@@ -9,6 +9,8 @@ defaultContentLanguage = "zh"
 enableRobotsTXT = true
 paginate = 10
 summaryLength = 0
+# version 4
+googleAnalytics = "G-CNRSDS3V3Q"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
