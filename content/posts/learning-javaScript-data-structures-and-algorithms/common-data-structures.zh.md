@@ -16,7 +16,7 @@ keywords:
 TODO
 
 - 添加图片
-- 添加 Leetcode URL
+- [x] 添加 Leetcode URL
 - 添加讲解
 
 ## 常用数据结构和技巧/Common Data Structure
@@ -41,7 +41,16 @@ TODO
 - 查询某个元素是否存在时需要遍历整个数组，耗费 O（n）的时间（其中，n是元素的个数）
 - 删除和添加某个元素时，同样需要耗费 O（n）的时间
 
-题目242. 有效的字母异位词
+### 关联题目
+
+[题目242. 有效的字母异位词](https://leetcode.cn/problems/valid-anagram/description/)
+
+解题思路：
+
+  1. 如果s和t的长度不同，直接返回false。
+  2. 哈希表，英文字母一共26个，s 中字母 在26个英文字母中出现一次，则加一。
+  3. t 中字母在26个英文字母中出现一次，  则减一。
+  4. 若26个字母每个都为0则互为异位词返回true，若不为0否则返回false
 
 ## 链表 /Linked List
 
@@ -63,17 +72,18 @@ TODO
 ### 解题技巧
 
 - 利用快慢指针（有时候需要用到三个指针）
-
- 1. 链表的翻转
- 2. 寻找倒数第K个元素
- 3. 寻找链表中间链表的元素
- 4. 判断链表是否有环
+  1. 链表的翻转
+  2. 寻找倒数第K个元素
+  3. 寻找链表中间链表的元素
+  4. 判断链表是否有环
 
 - 构建一个虛假的链表头
   - 两个排序链表，进行整合排序
   - 将链表的奇偶数按原定顺序分离，生成前半部分为奇数，后半部分为偶数的链表
 
-题目25.K个一组翻转链表 考察的点
+[题目25.K个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/description/)
+
+考察的点
 
 - 对翻转链表的熟悉程度
 - 递归算法的理解程度
@@ -92,11 +102,14 @@ TODO
 ### 算法基本思想
 
 - 可以用一个单链表来实现
-- 只关心上一次的操作
+- 只关心上一次的操作 (要对这些特点敏感，熟能生巧)
 - 处理完上一次的操作后，能在O（1）时间内查找到更前一次的操作
 
-题目20.有效的括号
-题目739.每日温度
+### 栈相关题目
+
+[题目20.有效的括号](https://leetcode.cn/problems/valid-parentheses/description/)
+
+[题目739.每日温度](https://leetcode.cn/problems/daily-temperatures/description/)
 
 ## 队列/Queue
 
@@ -119,7 +132,9 @@ TODO
 
 - 实现一个长度动态变化的窗口或者连续区间
 
-题目239. 滑动窗口最大值
+### 队列相关题目
+
+[题目239. 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/description/)
 
 ## 树/Tree
 
@@ -143,4 +158,6 @@ TODO
 - 中序遍历 （Inorder Traversal）
 - 后序遍历 （Postorder Traversal）
 
-题目230.二又捜索中第K小的元素
+### 树相关题目
+
+[题目230.二又捜索中第K小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/description/)
