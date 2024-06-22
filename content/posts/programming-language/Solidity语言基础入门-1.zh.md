@@ -54,12 +54,61 @@ contract SimpleStorage {
 
 ## 定义函数
 
+```sol
+function store(uint256 _likeNumber) public virtual  {
+    likeNumber = _likeNumber;
+} // Note that function the curly brackets {} not add ";"
+
+function retrieve () public view returns(uint256) {
+    return likeNumber;
+}
+
+function getPureNumber () public pure returns(uint256) {
+    return 999;
+}
+```
+
 ## 数组和 strucs
 
+```sol
+
+struct Student {
+    uint256 number;
+    string name;
+}
+// static array
+// Student[3] public listOfStudent;
+// dynamic array
+Student[] public listOfStudent;
+Student public tom =  Student(42, 'Tom');
+Student public lily =  Student({number: 11, name: 'Lily'});
+
+```
+
 ## 错误和警告
+
+错误表示编写的代码无法通过编译器的编译，不可以正常发布到的服务器上。
+
+警告则表示没有按照约定的规范去写代码，但是不影响编译，可以正常部署。
 
 ## Memory storage 和 calldata
 
 ## mappings
 
+```sol
+// mapping 映射关系 tom --> 88
+mapping (string => uint256) public nameToNumber;
+
+function addStudent(string memory _name, uint _number) public  {
+    Student memory newStudent = Student(_number, _name);
+    // listOfStudent.push(Student(_number, _name));
+    listOfStudent.push(newStudent);
+    // Adding someone to the mapping
+    nameToNumber[_name] = _number;
+}
+
+```
+
 ## 部署智能合约
+
+这里我们需要安装一下 MateMask 钱包插件。
